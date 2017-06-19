@@ -20,6 +20,21 @@ app.get('/sfr-1',(req,res)=>{
     pageTitle:'SFR1 SPORT'
   });
 });
+app.get('/rtp-1-portugal',(req,res)=>{
+  res.render('rtp-1-portugal.hbs',{
+    pageTitle:'RTP1'
+  });
+});
+app.get('/match-tv',(req,res)=>{
+  res.render('match-tv.hbs',{
+    pageTitle:'MATCH! TV'
+  });
+});
+app.get('/first-tv-ru',(req,res)=>{
+  res.render('first-tv-ru.hbs',{
+    pageTitle:'FIRST TV RU'
+  });
+});
 app.listen(port,()=>{
   console.log(`Server is up on port ${port}`);
 });
